@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <script src="javascript.js"></script>
+
+    <div class="title-border">
+        <div class="title">
+            Rock Paper Scissors
+        </div>
+    </div>
+
+    <div class="section-one">
+        <div class="container">
+            <div class="scoreboard">
+                <div class="points">
+                    You:
+                    <div class="p-score" id="p-score">
+                        0
+                    </div>
+                </div>
+
+                <div class="points">
+                    Computer:
+                    <div class="c-score" id="c-score">
+                        0
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="moves">
+                <div class="move">
+                    Your Move:
+                    <div class="p-move" id="p-move">
+                        
+                    </div>
+                </div>
+                <div class="move">
+                    Computer's Move:
+                    <div class="c-move" id="c-move">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message" id="celebration">
+                
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="button">
+            <img src="https://cdn.pixabay.com/photo/2014/12/22/00/03/rock-576682_1280.png" id="img1" draggable="false">
+            <button onclick="play('rock')">Rock</button>
+        </div>
+        
+        <div class="button">
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/19/00/certificate-154169_1280.png" id="img2" draggable="false">
+            <button onclick="play('paper')">Paper</button>
+        </div>
+        
+        <div class="button">
+            <img src="https://cdn.pixabay.com/photo/2012/04/01/13/08/scissors-23412_1280.png" id="img3" draggable="false">
+            <button onclick="play('scissors')">Scissors</button>
+        </div>
+    </div>
+
+    <div class="reset-button" id="try-again">
+        <button onclick="reset()">Try Again</button>
+    </div>
+
+  </body>
+
+</html>
