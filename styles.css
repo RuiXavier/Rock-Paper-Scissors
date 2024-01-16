@@ -29,6 +29,9 @@ body {
     border-radius: 25px;
     padding: 1rem;
     border-color: orange;
+
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 
@@ -37,6 +40,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -45,6 +50,8 @@ body {
     align-items: center;
     margin-bottom: 1rem;
     gap: 3rem;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .move {
@@ -52,6 +59,9 @@ body {
     gap: 1rem;
     font-family: 'Russo One', sans-serif;
     font-size: 2rem;
+
+    margin-bottom: 1rem;
+    flex-shrink: 1;
 }
 
 .moves {
@@ -60,6 +70,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .scoreboard {
@@ -68,6 +80,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .points {
@@ -89,6 +103,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -103,6 +119,9 @@ body {
     border-width: 0.5rem;
     border-radius: 25px;
     border-color: rgb(223, 191, 12);
+
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 #img1 {
