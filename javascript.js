@@ -7,46 +7,46 @@ function play(playerChoice) {
     let playerMoveDiv = document.getElementById("p-move");
     let pcMoveDiv = document.getElementById("c-move");
 
-    let playerPoints = parseInt(playerDiv.innerHTML, 10);
-    let pcPoints = parseInt(pcDiv.innerHTML, 10);
+    let playerPoints = parseInt(playerDiv.textContent, 10);
+    let pcPoints = parseInt(pcDiv.textContent, 10);
 
     if(playerPoints === 5 || pcPoints === 5){
         return;
     }
 
-    playerMoveDiv.innerHTML = playerChoice;
-    pcMoveDiv.innerHTML = pcChoice;
+    playerMoveDiv.textContent = playerChoice;
+    pcMoveDiv.textContent = pcChoice;
 
     switch (playerChoice) {
         case 'rock':
             if(pcChoice == 'paper'){
                 pcPoints++;
-                pcDiv.innerHTML = pcPoints;
+                pcDiv.textContent = pcPoints;
             }
             if(pcChoice == 'scissors'){
                 playerPoints++;
-                playerDiv.innerHTML = playerPoints;
+                playerDiv.textContent = playerPoints;
             }
             break;
         case 'paper':
             if(pcChoice == 'scissors'){
                 pcPoints++;
-                pcDiv.innerHTML = pcPoints;
+                pcDiv.textContent = pcPoints;
             }
             if(pcChoice == 'rock'){
                 playerPoints++;
-                playerDiv.innerHTML = playerPoints;
+                playerDiv.textContent = playerPoints;
             }
             break;
         
         case 'scissors':
             if(pcChoice == 'rock'){
                 pcPoints++;
-                pcDiv.innerHTML = pcPoints;
+                pcDiv.textContent = pcPoints;
             }
             if(pcChoice == 'paper'){
                 playerPoints++;
-                playerDiv.innerHTML = playerPoints;
+                playerDiv.textContent = playerPoints;
             }
             break;
         
@@ -56,12 +56,12 @@ function play(playerChoice) {
     
     if(playerPoints == 5){
         let div = document.getElementById('celebration');
-        div.innerHTML = "Congratulations!! You Won!";
+        div.textContent = "Congratulations!! You Won!";
     }
 
     if(pcPoints == 5){
         let div = document.getElementById('celebration');
-        div.innerHTML = "Better Luck Next Time!";
+        div.textContent = "Better Luck Next Time!";
     }
 
     if(playerPoints === 5 || pcPoints === 5){
@@ -101,10 +101,10 @@ function reset() {
     let playerMoveDiv = document.getElementById("p-move");
     let pcMoveDiv = document.getElementById("c-move");
 
-    playerDiv.innerHTML = 0;
-    pcDiv.innerHTML = 0;
-    div.innerHTML = '';
+    playerDiv.textContent = 0;
+    pcDiv.textContent = 0;
+    div.textContent = '';
     resetButton.style.display = "none";
-    playerMoveDiv.innerHTML = '';
-    pcMoveDiv.innerHTML = '';
+    playerMoveDiv.textContent = '';
+    pcMoveDiv.textContent = '';
 }
